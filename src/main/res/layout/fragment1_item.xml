@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/back" />
+
+    <EditText
+        android:id="@+id/et_sou"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/btn_gosou"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="搜索"
+        android:background="#00000000"/>
+
+
+</LinearLayout>
+

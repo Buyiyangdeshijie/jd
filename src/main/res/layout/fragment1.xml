@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            </com.youth.banner.Banner>
+            <ImageView
+                android:id="@+id/img_d"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_below="@+id/banner"
+                android:src="@drawable/zljj"
+                android:background="#000"
+                />
+            <RelativeLayout
+                android:id="@+id/rv_jgg"
+                android:layout_below="@id/img_d"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                >
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp">
+                </android.support.v4.view.ViewPager>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginTop="110dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:id="@+id/ll">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/jdkb"/>
+                <com.bwei.www.jingdong.zuheView.ENoticeView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="150dp"
+                    android:id="@+id/noticeView"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical">
+
+                <TextView
+
+                    android:id="@+id/tv_miaosha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="京东秒杀"
+                    android:textColor="#f00" />
+
+                <TextView
+                    android:id="@+id/tv_miaosha_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="10点场" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/tv_miaosha_shi"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/miaosha_time"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_miaosha_minter"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/miaosha_time"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_miaosha_second"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/miaosha_time"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_tj"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/rv_jgg"
+                android:background="@drawable/wntj" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/img_tj"
+                android:id="@+id/rv_tj"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+    <com.bwei.www.jingdong.zuheView.MyView
+        android:id="@+id/tit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </com.bwei.www.jingdong.zuheView.MyView>
+
+</RelativeLayout>

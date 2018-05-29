@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/gwc_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="170dp"
+            android:id="@+id/tv_gwc"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="#000000"
+            android:text="购物车"/>
+
+        <ImageView
+            android:id="@+id/img_dz"
+            android:layout_width="19dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_marginLeft="130dp"
+            android:id="@+id/tv_gwc_bj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"/>
+        <TextView
+            android:layout_marginLeft="130dp"
+            android:id="@+id/tv_gwc_wc"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"/>
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btn_gwc_xx"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/order_msg"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/gwc_bt"
+        android:id="@+id/tv_hh"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#a09292"/>
+    <ExpandableListView
+        android:layout_below="@id/tv_hh"
+        android:id="@+id/elv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:focusable="false" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/checkbox2"
+            android:gravity="center_vertical"
+            android:text="全选"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="合计 ：" />
+
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="0"
+                android:textColor="@android:color/holo_red_light" />
+
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:background="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="去结算(0)"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/btn_jiagz"
+                android:background="#FFFFFF"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:background="@android:color/holo_red_dark"
+                android:id="@+id/btn_del"
+                android:text="删除"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwei.www.jingdong.Activity.Fragment1_Activity">
+    <com.bwei.www.jingdong.zuheView.souView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sou_view">
+
+    </com.bwei.www.jingdong.zuheView.souView>
+<TextView
+    android:layout_below="@id/sou_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ttt"
+    android:text="热搜"/>
+    <com.bwei.www.jingdong.zuheView.FlowGroupView
+        android:layout_below="@id/ttt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/flowGroupView">
+
+
+    </com.bwei.www.jingdong.zuheView.FlowGroupView>
+    <TextView
+        android:layout_below="@id/flowGroupView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ls"
+        android:text="历史记录"/>
+
+    <ListView
+        android:layout_below="@id/flowGroupView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv"></ListView>
+    <!--<com.bwei.www.jingdong.zuheView.FlowGroupView-->
+        <!--android:layout_below="@+id/ls"-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:id="@+id/flowGroupView2">-->
+
+
+    <!--</com.bwei.www.jingdong.zuheView.FlowGroupView>-->
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:id="@+id/rv"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_below="@+id/ls"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+<Button
+
+    android:layout_below="@id/lv"
+    android:id="@+id/btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="清空历史搜索"/>
+
+</RelativeLayout>
